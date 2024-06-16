@@ -1,22 +1,56 @@
-header{
-    text-align: center;
-    font-family: Arial, sans-serif;
+html{
+    font-family: serif;
 }
 
-.reservation{
+.header{
+    text-align: center;
+    font-family: serif;
+    
+    box-shadow: 0 0 10px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pour aligner le bouton de réservation à droite */
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.logo p, .logo span {
+    margin: 0;
+    padding: 0;
+}
+
+.logo p {
+    color: red;
+}
+
+
+.reservation {
     background-color: rgb(255, 0, 0);
     border: none;
-    padding: 1rem;
+    padding: 0.5rem 1rem; /* Réduire le padding pour rendre le bouton plus discret */
     color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1rem;
-    margin: 0px 2px;
-    border-radius: 1rem;
-    float: right; 
-
+    font-size: 0.875rem; /* Réduire la taille de la police pour le bouton */
+    border-radius: 0.75rem; /* Réduire le rayon des coins pour équilibrer */
+    margin-left: auto;
+    margin-right: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 
 
 
@@ -27,18 +61,19 @@ body {
     background-color: #f4f4f4;
 }
 
-.header {
+.insta {
     text-align: center;
     padding: 2em 0;
 }
 
-.header h1 {
+.insta h2 {
     font-size: 24px;
     font-weight: bold;
     margin: 0;
+    
 }
 
-.header .underline {
+.insta .underline {
     width: 50px;
     height: 2px;
     background-color: black;
@@ -80,14 +115,20 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Assure que le conteneur prend toute la hauteur de la fenêtre */
+    height: 100vh; 
+    width: 100%; 
+    overflow: hidden; 
+    position: relative; 
 }
 
 #banniere img {
-    max-width: 100%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
-    max-height: 100%; /* Pour que l'image ne dépasse pas la hauteur du conteneur */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    position: absolute; 
+    top: 0;
+    left: 0;
 }
-
 
 
 .grid-container {
@@ -95,6 +136,7 @@ nav ul li a:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     padding: 100px;
+    background-color: antiquewhite;
 }
 
 .grid-item {
@@ -108,11 +150,21 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
-@keyframes mesImages {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+#presentation{
+    background-color: beige;
 }
+
+.bienvenue {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: royalblue;
+}
+
+.bienvenue h1 {
+    font-size: 3em; /* Taille de police pour le titre */
+    margin-bottom: 0.5em; /* Espacement en bas du titre */
+}
+
