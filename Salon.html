@@ -5,65 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page HTML Basique</title>
     <link rel="stylesheet" href="Salon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header class="header">
-        <h1>
-            <div class="logo">
-                <p>Mai</p>
-                <span>Coiffure</span> 
-            </div> 
-        </h1>
-            <button class="reservation"> Réserver</button>
+        <div class="navbar">
+            <h1>
+                <div class="logo">
+                    <p>Mai</p>
+                    <span>Coiffure</span> 
+                </div> 
+            </h1>
+            <ul class="links">
+                <li><a href="Salon.html">Accueil</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Produit.html">Produit</a></li> 
+            </ul>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="Salon.html">Accueil</a></li>
-            <li><a href="#">Tarif</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Produit</a></li>
-            
-        </ul>
-    </nav>
     <main>
-    <div id="banniere">
+        <div id="banniere">
             <img src="images/bannière3.png" alt="cliente 1">
             <div class="bienvenue">
                 <h1>Bienvenue dans mon Salon</h1>
             </div>
-    </div>
-    </main>
-        <div id="presentaion">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum itaque et labore tempore! Error optio dolore, cumque eos laborum rerum totam ab ipsa assumenda molestiae, hic recusandae nihil, est repudiandae.</p>
         </div>
 
-
-
-
-    <main>
+        <div id="presentation">
+            <p>Bienvenue chez Mai Coiffure, votre salon de coiffure à domicile où l'art de la coiffure rencontre le confort de votre maison. Avec moi, votre coiffeuse dévouée,
+                 vous bénéficierez d'un service personnalisé et professionnel, adapté à vos besoins et à votre emploi du temps.
+            </p>
+        </div>
+        
+        <section class="div-container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <video id="slide-1" src="images/Video iliario.MOV" loop autoplay muted></video>
+                    <img id="slide-2" src="images/client1.png" alt="Image 1">
+                    <img id="slide-3" src="images/client1.png" alt="Image 1">
+                    <img id="slide-4" src="images/client1.png" alt="Image 1">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                </div>
+            </div>
+        </section>
+        
         <header class="insta">
-            <h2>Instagram Mai coloriste visagiste</h1>
+            <h2>Instagram Mai coloriste visagiste</h2>
             <div class="underline"></div>
         </header>
         <section class="grid-container">
-            <div class="grid-item"><img src="images/photo1.jpg" alt="Image 1"></div>
-            <div class="grid-item"><img src="images/photo2.jpg" alt="Image 2"></div>
-            <div class="grid-item"><img src="images/photo6.jpg" alt="Image 3"></div>
-            <div class="grid-item"><img src="images/photo4.jpg" alt="Image 4"></div>
-            <div class="grid-item"><img src="images/photo5.jpg" alt="Image 5"></div>
-            <div class="grid-item"><img src="images/photo5.jpg" alt="Image 5"></div>
+            <div class="grid-item"><img src="images/client1.png" alt="Image 1"></div>
+            <div class="grid-item"><img src="images/client2.png" alt="Image 2"></div>
+            <div class="grid-item"><img src="images/client3.png" alt="Image 3"></div>
+            <div class="grid-item"><img src="images/client4.png" alt="Image 4"></div>
+            <div class="grid-item"><img src="images/client5.png" alt="Image 5"></div>
+            <div class="grid-item"><img src="images/client6.png" alt="Image 6"></div>
         </section>
-        
-        <p></p>
-        <h2></h2>
-        <p></p>
     </main>
-
-
-
     <footer>
-        <p>Site réalisé par Vongsavanh Kevin</p>
+        <div class="footer1">
+            <ul>
+                <li>Adresse : 17 rue du manoir 95380 Puiseux-en-France</li>
+                <li>07.56.23.94.25</li>
+                <li>maicoiffure@gmail.com</li>
+            </ul>
+        </div>
+        <div class="footer2">
+            <ul>
+                <li>Lien utiles:</li>
+                <li><a href="https://www.instagram.com/coloristevisagiste/">Instagram</a></li>
+            </ul>
+        </div>
     </footer>
+    <p id="kevin">Réalisé par Vongsavanh Kevin</p>
+    <script src="Salon.js"></script>
+
 </body>
 </html>
