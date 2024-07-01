@@ -5,3 +5,7 @@ if (logoElements.length > 0) {
         window.location.href = 'file:///C:/Users/vongk/OneDrive/Bureau/Code/Perso/Salon.html';
     });
 }
+
+$('#coupe').on('click',function(){
+    $('#ContenuCoupes').hide();
+});

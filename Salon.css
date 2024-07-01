@@ -158,6 +158,8 @@ nav ul li {
     padding-bottom: 25px;
     margin-top: 25px;
     text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .bienvenue {
@@ -198,15 +200,24 @@ footer{
     font-size: smaller;
 }
 
-.slider-wrapper{
-    position: relative;
-    max-width: 48rem;
-    margin: 0 auto;
+.div-container {
+    margin-top: 10px;
 }
 
-.slider{
+.content-wrapper {
     display: flex;
-    aspect-ratio: 16 /9;
+    align-items: center;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 45rem; /* Adjust width as needed */
+    margin: 0;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -214,13 +225,13 @@ footer{
     border-radius: 0.5rem;
 }
 
-.slider img{
+.slider img {
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
 }
 
-.slider-nav{
+.slider-nav {
     display: flex;
     column-gap: 1rem;
     position: absolute;
@@ -237,11 +248,16 @@ footer{
     background-color: #fff;
     opacity: 0.75;
     transition: opacity ease 250ms;
-
 }
+
 .slider-nav a:hover {
     opacity: 1;
 }
+
+.description {
+    margin-left: 1rem; /* Adjust margin as needed */
+}
+
 /** style pour la page contact */
 
 .contacth1{
@@ -292,4 +308,69 @@ h2 {
 p {
     font-size: 1.2em;
     margin: 5px 0;
+}
+
+/** style pour la page services */
+
+.titreServices{
+    text-align: center;
+}
+
+div .underline{
+    width: 750px;
+    height: 2px;
+    background-color: black;
+    margin: 10px auto 0 auto;
+}
+
+.container .underline{
+    width: 1200px;
+    height: 2px;
+    background-color: black;
+    margin: 10px auto 0 auto;
+    align-items: center;
+}
+
+#ContenuCoupes {
+    width: 100%;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.description {
+    flex: 2;
+}
+
+.details {
+    flex: 1;
+    text-align: right;
+}
+
+.service-name, .time, .price {
+    margin: 0;
+}
+.services-items {
+    display: flex;
+    justify-content: center; 
+    gap: 85px; /* Espace entre les éléments */
+}
+
+.services-items p {
+    margin: 0; 
+}
+
+.services-items .underline{
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    margin: 10px auto 0 auto;
+}
+
+#coupes, #couleur, #lissage{
+    cursor: pointer;
 }
