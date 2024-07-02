@@ -316,6 +316,10 @@ p {
     text-align: center;
 }
 
+#coupes, #couleur, #lissage{
+    cursor: pointer;
+}
+
 div .underline{
     width: 750px;
     height: 2px;
@@ -371,6 +375,10 @@ div .underline{
     margin: 10px auto 0 auto;
 }
 
-#coupes, #couleur, #lissage{
-    cursor: pointer;
+#ContenuLissage{
+    display: none;
+}
+
+#ContenuCouleur{
+    display: none;
 }
